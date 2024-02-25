@@ -1,0 +1,362 @@
+.pokemons {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.normal {
+    background-image: linear-gradient(to right, rgb(179, 177, 66), rgb(143, 141, 27));
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgb(143, 141, 27);
+}
+
+.grass {
+    background-image: linear-gradient(to right, #147f5a, #42a282);
+    border-style: solid;
+    border-radius: 2px;
+    border-color: #147f5a;
+}
+
+.fire {
+    background-image: linear-gradient(to right, rgb(255, 63, 63), rgb(255, 32, 32));
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgb(255, 32, 32);
+}
+
+.water {
+    background-image: linear-gradient(to right, rgb(68, 140, 203),rgb(20, 95, 161));
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgb(20, 95, 161);
+}
+
+.electric {
+    background-image: linear-gradient(to right, rgb(255, 243, 79),rgb(153, 144, 21));
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgb(153, 144, 21);
+}
+
+.ice {
+    background-image: linear-gradient(to right, rgb(79, 220, 255),rgb(7, 129, 148));
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgb(7, 129, 148);
+}
+
+.ground {
+    background-image: linear-gradient(to right, rgb(204, 194, 61),rgb(139, 131, 18));
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgb(139, 131, 18);
+}
+
+.flying {
+    background-image: linear-gradient(to right, rgb(158, 78, 211),rgb(75, 12, 106));
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgb(75, 12, 106);
+}
+
+.poison {
+    background-image: linear-gradient(to right, rgb(158, 78, 211),rgb(75, 12, 106));
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgb(75, 12, 106);
+}
+
+.fighting {
+    background-image: linear-gradient(to right, rgb(211, 78, 78),rgb(106, 12, 12));
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgb(106, 12, 12);
+}
+
+.psychic {
+    background-image: linear-gradient(to right, rgb(214, 83, 159),rgb(207, 23, 194));
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgb(207, 23, 194);
+}
+
+.dark {
+    background-image: linear-gradient(to right, rgb(135, 105, 44),rgb(91, 64, 11));
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgb(91, 64, 11);
+}
+
+.rock {
+    background-image: linear-gradient(to right, rgb(187, 179, 71),rgb(121, 114, 11));
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgb(121, 114, 11);
+}
+
+.bug {
+    background-image: linear-gradient(to right, rgb(148, 176, 36),rgb(99, 113, 11));
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgb(99, 113, 11);
+}
+
+.ghost {
+    background-image: linear-gradient(to right, rgb(140, 31, 199),rgb(63, 4, 119));
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgb(63, 4, 119);
+}
+
+.steel {
+    background-image: linear-gradient(to right, rgb(205, 205, 205),rgb(110, 110, 110));
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgb(110, 110, 110);
+}
+
+.dragon {
+    background-image: linear-gradient(to right, rgb(170, 79, 255),rgb(113, 17, 143));
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgb(113, 17, 143);
+}
+
+.fairy {
+    background-image: linear-gradient(to right, rgb(255, 79, 243),rgb(92, 21, 120));
+    border-style: solid;
+    border-radius: 2px;
+    border-color: rgb(92, 21, 120);
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.pokemon .number {
+    color: #000;
+    opacity: .7;
+    text-align: right;
+    font-size: .695rem;
+}
+
+.pokemon .name {
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: .25rem;
+}
+
+.pokemon .detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pokemon .detail .types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.pokemon .detail .types .type {
+    color: #000;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .688rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+}
+
+.pokemon .detail img {
+    max-width: 100%;
+    height: 70px;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.pagination #toggleMode img {
+    position: fixed;
+    width: 60px;
+    top: 6.8%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.pagination #loadMoreButton img {
+    position: fixed;
+    width: 47px;
+    top: 4.4%;
+    left: 89%;
+}
+
+.pagination a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.pagination button {
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: 0.938rem;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 0.313rem;
+}
+
+#scrollButtonUp img {
+    width: 40px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+#scrollButtonDown img {
+    width: 47px;
+    padding: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+
+#loadMoreButton,
+#toggleMode,
+#scrollButtonDown,
+#scrollButtonUp {
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 380px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr;
+    }
+    #loadMoreButton
+    #toggleMode {
+        position: fixed;
+        width: 30%;
+        top: 20%;
+        right: 20px;
+    }
+
+    #loadMoreButton
+     {
+        position: fixed;
+        width: 100px;
+        left: 10;
+     }
+    #toggleMode
+     {
+        margin-right: 15px;
+    }
+    
+    #scrollButtonDown {
+        position: fixed;
+        bottom: 20px;
+        right: 45px;
+    }
+
+    #scrollButtonUp {
+        position: fixed;
+        bottom: 20px;
+        right: 90px; /* Oculta o botão de rolar para cima em telas pequenas */
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+#loadMoreButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#toggleMode {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+}
+
+#scrollButtonDown {
+    position: fixed;
+    right: -21px;
+}
+
+#scrollButtonUp {
+    position: fixed;
+    width: 50%;
+    right: 73%;
+}
+
+
+@media screen and (min-width: 992px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #loadMoreButton {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+    
+    #toggleMode {
+        position: fixed;
+        top: 70px;
+        right: 20px;
+    }
+
+    #scrollButtonDown {
+        position: fixed;
+        right: 20px;
+    }
+
+    #scrollButtonUp {
+        position: fixed;
+        width: 50%;
+        right: 93%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .content {
+        max-width: 1100px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+    #scrollButtonDown {
+        position: fixed;
+        top: 92%;
+        width: 50%;
+        right: -20%;
+    }
+
+    #scrollButtonUp {
+        position: fixed;
+        top: 92%;
+        width: 50%;
+        right: 70%;
+    }
+}

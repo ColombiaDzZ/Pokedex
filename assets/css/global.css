@@ -1,0 +1,62 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f8fc;
+    overflow-x: hidden;
+    overflow-y: unset;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(178, 176, 176);
+    border-radius: 4px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+html {
+    height: 100%;
+}
+
+.content {
+    background-image: repeating-linear-gradient(rgb(190, 190, 190), rgb(199, 199, 199));
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    color: #cbcbcb;
+}
+
+.content h1 {
+    margin-left: 10px;
+}
+
+.content h1 {
+    color: #000;
+    font-family: 'Jetbrains Mono';
+    font-size: 40px;
+}
+
+/* Seus estilos existentes aqui */
+
+/* Estilos para o modo escuro */
+.dark-mode {
+    background-color: #2f2f2f;
+    color: #fff;
+}
+
+.dark-mode .content {
+    background-image: repeating-linear-gradient(rgb(31, 31, 31), rgb(65, 65, 65));
+    color: #fff; 
+    border-style: solid;
+    border-radius: 4px;
+    border-image: linear-gradient(to right, rgb(28, 28, 28), rgb(85, 85, 85))2;
+}
