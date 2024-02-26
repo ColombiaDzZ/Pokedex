@@ -23,18 +23,18 @@
 
 # Como Usar
 
-### 1.Clone este repositório em sua máquina local usando o seguinte comando:
+### 1. Clone este repositório em sua máquina local usando o seguinte comando:
 
 ```bash
 git clone https://github.com/ColombiaDzZ/Pokedex.git
 ````
 
-### 2.Navegue até o diretório do projeto:
+### 2. Navegue até o diretório do projeto:
 
 ```bash
 cd Pokedex
 ```
 
-### 3.Abra o arquivo index.html em seu navegador web.
+### 3. Abra o arquivo index.html em seu navegador web.
 
-### 4.Explore a Pokedex, visualize os Pokémon e divirta-se!
+### 4. Explore a Pokedex, visualize os Pokémon e divirta-se!
